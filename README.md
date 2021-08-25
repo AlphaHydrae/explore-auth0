@@ -18,11 +18,10 @@ cd explore-auth0
 npm ci
 ```
 
-Configure Auth0:
+Create a `.env` file then edit it to fill in your Auth0 domain and client ID:
 
 ```bash
 cp .env.sample .env
-# Edit .env to fill in your Auth0 domain and client ID.
 ```
 
 Start the application:
