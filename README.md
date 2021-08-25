@@ -1,19 +1,34 @@
-# ExploreAuth0
+# Explore Auth0
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+An Angular application demonstrating [Auth0](https://auth0.com) integration.
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* A configured [Auth0](https://auth0.com) application as per the [Angular SPA
+  quickstart](https://auth0.com/docs/quickstart/spa/angular)
+* [Node.js](https://nodejs.org) 16.x
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clone this repository and install dependencies:
 
-## Build
+```bash
+git clone https://github.com/AlphaHydrae/explore-auth0.git
+cd explore-auth0
+npm ci
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Configure Auth0:
 
-## Further help
+```bash
+cp .env.sample .env
+# Edit .env to fill in your Auth0 domain and client ID.
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Start the application:
+
+```bash
+npm start
+```
+
+Visit http://localhost:4200.
